@@ -1,0 +1,133 @@
+* {
+    outline: 0;
+}
+.fstpage{
+    background: rgb(34,193,195);
+    background: linear-gradient(128deg, rgba(34,193,195,1), rgba(253,187,45,1));
+    height: 100%;
+    font-size: 60px;
+}
+.fstext {
+    margin-top: 75vh; /* poussé de 3/4 de hauteur de viewport */
+    margin-left: 50px;
+    transform: translateY(-50%); /* tiré de la moitié de sa propre hauteur */
+    position:absolute;
+    font-size: 150px;
+    font-style: italic;
+    font-weight: 900;
+    text-align: left;
+}
+.presentation,.projects,.skills,#contact {
+    padding-top: 70px;
+    padding-bottom: 80px;
+}
+h1 {
+    font-size: 80px;
+    text-align: center;
+    font-variant: small-caps;
+}
+.present {
+    font-size: 25px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 52px;
+}
+hr {
+    color: #333;
+    overflow: visible;
+    text-align: center;
+}
+hr::after {
+    background: #fff;
+    content: '</>';
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 4px;
+    position: relative;
+    top: -11px;
+}
+.second_hr::after {
+    background: #e8eaed;
+    content: '</>';
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 4px;
+    position: relative;
+    top: -11px;
+}
+h2 {
+    color: rgb(255, 83, 83);
+    text-align: center;
+}
+#cross {
+    width: 40px;
+    height: auto;
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 40%;
+}
+.projects {
+    text-align: center;
+}
+.skills{
+    background-image: url("../files/code.jpg");
+    background-attachment: fixed;
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+    opacity: 0.6;
+}
+.skills img{
+    width: auto;
+    height: 100px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+.skills h2{
+    margin-top: 50px;
+    margin-left: 30px;
+    font-size: 30px;
+    text-align: left;
+}
+.skills div{
+    display: inline-flex;
+    align-content: center;
+    margin-left: 100px;
+}
+.skills figure {
+    align-content: center;
+    display: flex;
+    flex-flow: column;
+	margin: auto;
+	padding:10px;
+    margin-right: 100px;
+	background:white;
+	max-width: 300px;
+}
+.skills figcaption {
+    text-align: left;
+	margin-top:5px;
+	padding:5px;
+}
+.skills h1{
+    text-shadow: 1px 0 0 white, 0 1px 0 white, 0 -1px 0 white, -1px 0 0 white;
+}
+footer {
+	position: absolute;
+	background-color: white;
+	width: 100%;
+	height: 200px;
+}
+.social {
+	width: 50px;
+	margin-left: 50px;
+	margin-top: 100px;
+    transform: translateY(-50%);
+}
+#social {
+	width: 100%;
+	text-align: center;
+}
