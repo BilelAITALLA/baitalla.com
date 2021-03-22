@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HOME</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="style/menu.css">
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/card.css">
+		<link rel="stylesheet" href="style/carousel.css">
+		<link rel="stylesheet" href="style/contact.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li ><a  href="#intro">ACCUEIL</a></li>
+				<li ><a  href="#me">Qui suis-je ?</a></li>
+				<li ><a  href="#projects">Projets</a></li>
+				<li ><a  href="#skills">Compétences</a></li>
+				<li ><a  href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="fstpage" style="opacity: 1;" id="intro">
+			<p class="fstext">Bilel<br>AIT ALLA</p>
+		</div>
+		<div class="presentation" style="opacity: 1;" id="me">
+			<h1>présentation</h1>
+			<hr width="35%", size="2px" color="black">
+			<p class="present">Je m'appelle Bilel AIT ALLA, 15 ans et en classe de Terminale Génerale. Passionné de developpement et de programmation depuis 2 ans,
+			j'aimerais plus tard devenir developpeur Web ou Mobile. Pour l'instant je m'autoforme sur des sites comme OpenClassroom ou Udemy. Ces formations
+			m'ont permis de commencer certains projets que vous pourrez retrouver plus bas. <br><br> Pour voir mon CV ça se passe <a href="./files/CV.pdf" target="_blank">ici</a>.
+			</p>
+		</div>
+		<div style="background-color: #e8eaed;" class="projects" style="opacity: 1;" id="projects">	
+			<h1>projets</h1>
+			<hr width="35%", size="2px" color="black" class="second_hr">
+			<div class="card" onclick="infos('un')">
+				<img src="files/Capture.PNG" alt="">
+				<h2>ANIMEX</h2>
+				<h3>Application de streaming vidéo <br>(en developpement)</h3>
+			</div>
+			<div class="card" onclick="infos('deux')">
+				<img src="files/CaptureSITESY.PNG" alt="">
+				<h2>SYADOX</h2>
+				<h3>Site communautaire pour le youtubeur Syadox</h3>
+			</div>
+			<div class="card" onclick="infos('trois')">
+				<img src="files/CaptureSITE.PNG" alt="">
+				<h2>Bilel AIT ALLA</h2>
+				<h3>Site web me servant de portfolio</h3>
+			</div>
+		</div>
+		<div class="skills" style="opacity: 1;" id="skills">
+			<h1>compétences</h1>
+			<hr width="35%", size="2px" color="black">
+			<h2>Développement :</h2>
+			<div>
+				<img src="files/WEB.png" alt="">
+				<img src="files/FLUTTER.png" alt="">
+				<img src="files/PYTHON.png" alt="">
+				<img src="files/REACT.png" alt="">
+			</div><br><br>
+			<h2>Design et productivité :</h2>
+			<div>
+				<img src="files/LIBREOFFICE.png" alt="">
+				<img src="files/MICROFFICE.png" alt="">
+				<img src="files/ADOBEREADER.png" alt="">
+				<img src="files/XD.png" alt="">
+				<img src="files/PHOTOSHOP.png" alt="">
+			</div>
+		</div>
+		<section id="contact" style="background-color: #e8eaed;">
+			<div class="contact">
+				<h1>Contact</h1>
+        		<form class="form" method="post" action="">
+            		<input type="text" name="name" placeholder="Votre Nom :" required><br><br>
+
+            		<input type="mail" name="mail" placeholder="Votre Adresse Mail :" required><br><br>
+
+            		<input type="text" name="country" placeholder="Votre pays :" required><br><br>
+
+            		<input type="text" name="subject" placeholder="Sujet :" required><br><br>
+
+            		<textarea name="message" rows="15" placeholder="Votre Message :" required></textarea><br><br>
+
+            		<input type="submit" class="submit" value="Envoyer">
+        		</form>
+    		</div>
+		</section>
+		<footer>
+			<div id="social">
+				<a href="https://github.com/syadox66">
+					<img class="social" src="files/GITHUB.png">
+				</a>
+				<a href="mailto:bilel.aitalla66@gmail.com">
+					<img class="social" src="files/MAIL.png">
+				</a>
+				<p>© 2021 Bilel AIT ALLA, Tous droits réservés.</p>
+			</div>
+		</footer>
+		<div class="card_infos" style="display: none;" id="un">
+			<img src="files/cross.png" id="cross" onclick="infos('un')">
+			<h2>ANIMEX</h2>
+			<div class="infos">
+				<h3>Description :</h3>
+				<p>Animex est un projet d'application de streaming d'anime japonais. Ce projet est basé sur le SDK Flutter de Google. Il devra pouvoir:</p>
+				<ul>
+					<li>Lire une video à partir d'un lien</li>
+					<li>Récuperer les informations d'un anime sur une BDD ou un fichier JSON</li>
+					<li>Permettre de telecharger les episodes d'un anime</li>
+					<li>S'adapter aux utilisateurs</li>
+				</ul>
+				<h3>Début :</h3>
+				<p>Novembre 2020</p>
+				<h3>Fin :</h3>
+				<p>En developpement...</p>
+				<h3>Technologies utilisées :</h3>
+				<p>Dart via le SDK Flutter</p>
+			</div>
+			<div class="carousel">
+				<button class="carousel__button previous" id="previous" style="display: none;"><</button>
+				<div class="carousel__images">
+				  	<video src="files/homescreen.mp4" alt="" controls autoplay></video>
+				  	<video src="files/ajoutliste.mp4" alt="" controls autoplay></video>
+				  	<video src="files/movieplayer.mp4" alt="" controls autoplay></video>
+				  	<video src="files/search.mp4" alt="" controls autoplay></video>
+				</div>
+				<button class="carousel__button next" id="next" style="display: block;">></button>
+			</div>
+		</div>
+		<div class="card_infos" style="display: none;" id="deux">
+			<img src="files/cross.png" id="cross" onclick="infos('deux')">
+			<h2>SYADOX</h2>
+			<div class="infos">
+				<h3>Description :</h3>
+				<p>Le site SYADOX est un site communautaire crée pour le youtubeur Syadox. Sur ce site One-Page on peut retrouver :</p>
+				<ul>
+					<li>Une brève présentation du youtubeur</li>
+					<li>Un carousel vidéo regroupant les vidéos de sa chaîne</li>
+					<li>Un formulaire de Contact</li>
+					<li>Et bientôt : un formulaire d'inscription et une partie blog</li>
+				</ul>
+				<h3>Début :</h3>
+				<p>Mars 2020</p>
+				<h3>Fin :</h3>
+				<p>Mai 2020 ( ajout de nouvelles fonctionnalités encore à ce jour )</p>
+				<h3>Technologies utilisées :</h3>
+				<p>HTML5, CSS3, Javascript</p>
+			</div>
+		</div>
+		<div class="card_infos" style="display: none;" id="trois">
+			<img src="files/cross.png" id="cross" onclick="infos('trois')">
+			<h2>Site Portfolio</h2>
+			<div class="infos">
+				<h3>Description :</h3>
+				<p>Ce site portfolio, que vous consultez actuellement, me permet de partager mon CV, mes compétences ainsi que divers projets sur lesquels j'ai pu travailler.</p>
+				<h3>Début :</h3>
+				<p>Février 2021</p>
+				<h3>Fin :</h3>
+				<p>En developpement...</p>
+				<h3>Technologies utilisées :</h3>
+				<p>HTML5, CSS3, Javascript</p>
+			</div>
+		</div>
+		
+		<script src="projects.js"></script>
+		<script src="carousel.js"></script>
+	</body>
+</html>
